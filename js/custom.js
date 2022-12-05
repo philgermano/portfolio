@@ -48,7 +48,7 @@ $(document).ready(function() {
 let slider = tns({
   container: '.my-slider',
   "center": true,
-  "loop": true,
+  "loop": false,
   autoplay: false,
   "mouseDrag": true,
   "swipeAngle": false,
