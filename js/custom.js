@@ -2,7 +2,8 @@
  /* jQuery Pre loader
   -----------------------------------------------*/
 $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
+    $('.preloader').fadeOut(1000); // set duration in brackets 
+       
 });
 
 
@@ -105,7 +106,6 @@ let slider2 = document.querySelectorAll('.slider2').forEach(slider => {
 
   
 //Modals for projects
-
 // Get the modal
 var modal1 = document.getElementById("modal1");
 var modal2 = document.getElementById("modal2");
@@ -114,29 +114,25 @@ var modal4 = document.getElementById("modal4");
 var modal5 = document.getElementById("modal5");
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("modal-button1");
-var btn2 = document.getElementById("modal-button2");
-var btn3 = document.getElementById("modal-button3");
-var btn4 = document.getElementById("modal-button4");
-var btn5 = document.getElementById("modal-button5");
+var modalButton = document.getElementsByClassName("modal-button");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close");
 
 // When the user clicks the button, open the modal 
-btn1.onclick = function() {
+modalButton[0].onclick = function() {
   modal1.style.display = "block";
 }
-btn2.onclick = function() {
+modalButton[1].onclick = function() {
   modal2.style.display = "block";
 }
-btn3.onclick = function() {
+modalButton[2].onclick = function() {
   modal3.style.display = "block";
 }
-btn4.onclick = function() {
+modalButton[3].onclick = function() {
   modal4.style.display = "block";
 }
-btn5.onclick = function() {
+modalButton[4].onclick = function() {
   modal5.style.display = "block";
 }
 
@@ -145,16 +141,16 @@ span[0].onclick = ()=>{
   modal1.style.display = "none";
 }
 span[1].onclick = ()=>{
-  modal1.style.display = "none";
+  modal2.style.display = "none";
 }
 span[2].onclick = ()=>{
-  modal1.style.display = "none";
+  modal3.style.display = "none";
 }
 span[3].onclick = ()=>{
-  modal1.style.display = "none";
+  modal4.style.display = "none";
 }
 span[4].onclick = ()=>{
-  modal1.style.display = "none";
+  modal5.style.display = "none";
 }
 
 

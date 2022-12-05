@@ -110,8 +110,14 @@ a:hover, a:active, a:focus {
   box-sizing: border-box;
 }
 
+.skill{
+  font-size: 6vw;
+}
 
-
+#skills{
+padding-top: 120px;
+text-align: center;
+}
 /*---------------------------------------
     All Section style              
 -----------------------------------------*/
