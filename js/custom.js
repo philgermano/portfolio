@@ -16,17 +16,17 @@ $(document).ready(function() {
     });
 
 
-  /* Smoothscroll js
-  -----------------------------------------------*/
-    $(function() {
-        $('.navbar-default a').bind('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 49
-            }, 1000);
-            event.preventDefault();
-        });
-    });
+  // /* Smoothscroll js
+  // -----------------------------------------------*/
+  //   $(function() {
+  //       $('.navbar-default a').bind('click', function(event) {
+  //           var $anchor = $(this);
+  //           $('html, body').stop().animate({
+  //               scrollTop: $($anchor.attr('href')).offset().top - 49
+  //           }, 1000);
+  //           event.preventDefault();
+  //       });
+  //   });
 
 
  /* Home Slideshow Vegas
@@ -39,8 +39,7 @@ $(document).ready(function() {
             { src: 'images/paisley-dos.png' }
         ],
         timer: false,
-        transition: [ 'zoomIn', ],
-        animation: ['kenburns']
+        transition: [ 'fade' ]
     });
   });
 
@@ -90,12 +89,6 @@ let slider2 = document.querySelectorAll('.slider2').forEach(slider => {
                 $('.go-top').fadeOut(200);
            }
         });   
-          // Animate the scroll to top
-        $('.go-top').click(function(event) {
-          event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 300);
-    });
-
 
   /* wow
   -------------------------------*/

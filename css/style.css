@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;300&display=swap');
 /* Body 
 ------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
 body {
     background: #f1f1f1;   
     font-family: 'Roboto', sans-serif;
@@ -111,7 +114,8 @@ a:hover, a:active, a:focus {
 }
 
 .skill{
-  font-size: 6vw;
+  font-size: 7vw;
+  margin-right: 10px;
 }
 
 #skills{
@@ -388,7 +392,7 @@ text-align: center;
   padding: 12px;
 }
 
-#project .team-thumb {
+#project .project-thumb {
   width: 100%;
   height: 500px;
   margin: 32px 0;
@@ -399,7 +403,7 @@ text-align: center;
   transition: all 0.3s ease;
 }
 
-#project .team-thumb .image-holder {
+#project .project-thumb .image-holder {
   position: relative;
   top: 40px;
   display: inline-block;
@@ -410,7 +414,7 @@ text-align: center;
   
 }
 
-#project .team-thumb .heading {
+#project .project-thumb .heading {
   font-weight: bold;
   position: relative;
   top: 10px;
@@ -418,20 +422,20 @@ text-align: center;
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-#project .team-thumb:hover {
+#project .project-thumb:hover {
   background: #697a6e;
 }
 
-#project .team-thumb:hover .image-holder {
+#project .project-thumb:hover .image-holder {
   top: -40px;
   margin-bottom: 0px;
 }
 
-#project .team-thumb:hover .heading {
+#project .project-thumb:hover .heading {
   top: -10px;
 }
 
-#project .team-thumb .description {
+#project .project-thumb .description {
   font-size: 18px;
   width: 80%;
   margin: 0 auto;
@@ -446,16 +450,17 @@ text-align: center;
 
 .modal-button{
   max-width: 20%;
+  margin-top: 20px;
 }
 
-#project .team-thumb:hover .description {
+#project .project-thumb:hover .description {
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-#project .team-thumb:hover p.description {
+#project .project-thumb:hover p.description {
   color: #f1f1f1;
 }
 
@@ -476,38 +481,6 @@ text-align: center;
   color: #f1f1f1;
 }
 
-#contact .form-control {
-  background: transparent;
-  box-shadow: none;
-  border: 1px solid #f9f9f9;
-  color: #ccc;
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 14px;
-  transition: all 0.4s ease-in-out;
-}
-
-#contact .form-control:focus {
-  border-color: #010101;
-  color: #f1f1f1;
-}
-
-#contact input {
-  height: 55px;
-}
-
-#contact input[type="submit"] {
-  background: #010101;
-  border:none;
-  color: #f1f1f1;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-#contact input[type="submit"]:hover {
-  background: #222;
-  color: #f1f1f1;
-}
 
 
 
@@ -594,12 +567,15 @@ footer {
     height: 50vh;
   }
 */
-  #about .team-thumb {
+  #about .project-thumb {
     margin-top: 32px;
   }
-  #project .team-thumb {
+  #project .project-thumb {
     width: 100%;
     height: 500px;
+  }
+  .skill{
+    font-size: 10vw;
   }
 }
 
@@ -621,9 +597,12 @@ footer {
     top: 0;
     left: 0;
   }
-  #project .team-thumb {
+  #project .project-thumb {
     width: 100%;
     height: 500px;
+  }
+  .skill{
+    font-size: 15vw;
   }
 }
 
@@ -642,7 +621,9 @@ footer {
   img {
     width: 100%;
   }
-
+  .skill{
+    font-size: 20vw;
+  }
   #about,
   #project,
   #contact {
