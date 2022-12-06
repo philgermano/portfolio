@@ -122,6 +122,10 @@ a:hover, a:active, a:focus {
 padding-top: 120px;
 text-align: center;
 }
+
+#tagline{
+  text-align: center;
+}
 /*---------------------------------------
     All Section style              
 -----------------------------------------*/
