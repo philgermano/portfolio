@@ -659,6 +659,15 @@ footer {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+/*  modal info icon    */
+.hover_icon{
+  width: 50px;
+  left: 85%;
+  top: 80%;
+  position: absolute;
+}
+
+
 /* Modal Content */
 .modal-content {
   background-color: #aab1af;
